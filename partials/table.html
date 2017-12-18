@@ -1,0 +1,25 @@
+<div style="padding: 10px;border: 1px solid black;">
+  <div class="right">
+    <label>search: </label>
+    <input ng-model="query.firstName" placeholder="Search by Title" autofocus>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Social Links</th>
+        <th>Title</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="person in personList | filter: query">
+        <th scope="row">{{person.firstName+" "+person.lastName}}</th>
+        <td>{{person.linkedinURL}}</td>
+        <td>{{person.title}}</td>
+        <td>{{person.location}}</td>
+      </tr>
+     </tbody>
+   </table>
+   <button type="button" class="btn btn-primary" ng-click="openModal({})">Add Person</button>
+</div>
