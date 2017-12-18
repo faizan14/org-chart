@@ -1,6 +1,6 @@
 # Project Title
 
-Org-chart. An application to maintain an organization chart.
+Org-chart. An application to maintain an organization chart. Edit/Delete functionalities are yet to be implemented.
 
 ## Getting Started
 
